@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Text_Depto"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Departamento"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/TextMunicipio"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/TextMunicipio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextEstrato"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Estrato Social"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/TextMunicipio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TextMunicipio"
+        app:layout_constraintTop_toBottomOf="@+id/TextMunicipio" />
+
+    <Button
+        android:id="@+id/btn_buscarformado"
+        android:layout_width="271dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:text="buscar formado"
+        app:layout_constraintEnd_toEndOf="@+id/TextEdad"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/TextEdad"
+        app:layout_constraintTop_toBottomOf="@+id/TextEdad" />
+
+    <EditText
+        android:id="@+id/TextMunicipio"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Municipio"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Depto" />
+
+    <EditText
+        android:id="@+id/TextEdad"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/TextEstrato"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TextEstrato"
+        app:layout_constraintTop_toBottomOf="@+id/TextEstrato" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

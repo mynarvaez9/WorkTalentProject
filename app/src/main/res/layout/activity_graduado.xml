@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Graduado">
+
+    <RadioButton
+        android:id="@+id/rd_ButtonPorcent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextEstratoSocial"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/textPorcentHM"
+        app:layout_constraintTop_toBottomOf="@+id/rd_ButtonPorcent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textPromEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Promedio Edad"
+        app:layout_constraintEnd_toEndOf="@+id/textPorcentHM"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/textPorcentHM"
+        app:layout_constraintTop_toBottomOf="@+id/textPorcentHM" />
+
+    <TextView
+        android:id="@+id/textPorcentHM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Porcentaje H/M"
+        app:layout_constraintEnd_toEndOf="@+id/TextEstratoSocial"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="@+id/TextEstratoSocial"
+        app:layout_constraintTop_toBottomOf="@+id/TextEstratoSocial" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="228dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextEstratoSocial"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="@+id/TextEstratoSocial"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <EditText
+        android:id="@+id/TextEstratoSocial"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Estrato Social "
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RadioButton
+        android:id="@+id/rd_ButtonPorcent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextEstratoSocial"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/textPorcentHM"
+        app:layout_constraintTop_toBottomOf="@+id/TextEstratoSocial"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
